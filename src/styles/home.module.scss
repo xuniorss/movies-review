@@ -1,0 +1,55 @@
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.3rem;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    .cardHeader {
+        span {
+            background-color: red;
+            color: white;
+            padding: 4px 8px;
+            text-align: center;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    }
+
+    .card {
+        height: auto;
+        width: 18rem;
+        border-radius: 10px;
+        background: #DDD;
+        padding: 1px;
+        margin-left: 10px;
+        margin-right: 10px;
+        transition: all 0.3s;
+
+        &:hover {
+            transition: all 0.3s;
+            transform: scale(1.1);
+        }
+
+        img { border-radius: 10px; }
+    }
+
+    .cardFooter {
+        display: flex;
+        flex-direction: column;
+
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.5rem;
+            
+            span {
+                font-weight: bold;
+                padding: 3px;
+            }
+        }
+
+    }
+}

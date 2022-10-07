@@ -20,9 +20,9 @@ export function Header() {
                     <Link href={'#'}><a>Trends</a></Link>
                     <Link href={'#'}><a>Trends</a></Link>
                 </nav>
-                <div>
+                <button>
                     sair
-                </div>
+                </button>
             </div>
         </header>
     )

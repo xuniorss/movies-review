@@ -14,11 +14,13 @@
         align-items: center;
         justify-content: space-around;
 
-
         a {
-            padding: 0 0.9rem;
-            color: #FFF;
-        }
+            padding: 0 0.8rem;
+            color: #8143ec;
+            font-weight: bold;
+            font-size: 1.2rem;
 
+            &:hover { text-decoration: underline #ffeb84; }
+        }
     }
 }

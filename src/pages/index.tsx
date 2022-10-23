@@ -3,7 +3,6 @@ import { GetServerSideProps } from 'next'
 import Image from 'next/image'
 import { Title } from '../components/Title'
 import styles from '../styles/home.module.scss'
-import logo from '../../public/images/logo.png'
 import { api } from '../services/api'
 import { useState } from 'react'
 
@@ -23,14 +22,11 @@ interface TrandProps {
 export default function Home({ trands, url_img }: TrandProps) {
     const [trand, setTrand] = useState<Trands[]>(trands.slice(0, 8))
 
-
-
-
     return (
         <>
             <Head><title>Movies review - Trends</title></Head>
             <div className={styles.container}>
-                <Title>Trands</Title>
+                <Title>Trends</Title>
                 <div className={styles.content}>
                     {trand.map(item => (
                         <div key={item.id} className={styles.card}>
